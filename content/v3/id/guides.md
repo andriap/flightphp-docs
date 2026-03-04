@@ -1,6 +1,6 @@
 # Panduan
 
-Flight PHP dirancang untuk sederhana namun powerful, dan panduan kami akan membantu Anda membangun aplikasi dunia nyata langkah demi langkah. Tutorial praktis ini membawa Anda melalui proyek lengkap untuk menunjukkan bagaimana Flight dapat digunakan secara efektif.
+Flight PHP dirancang untuk sederhana namun powerful, dan panduan kami akan membantu Anda membangun aplikasi di dunia nyata langkah demi langkah. Tutorial praktis ini membawa Anda melalui proyek lengkap untuk menunjukkan bagaimana Flight dapat digunakan secara efektif.
 
 ## Panduan Resmi
 
@@ -23,7 +23,7 @@ Panduan ini mencakup dasar-dasar pengujian unit dalam aplikasi Flight PHP. Ini m
 - Mocking dependensi
 - Jebakan umum yang harus dihindari
 - Menskala tes Anda seiring pertumbuhan aplikasi
-Tutorial ini ideal untuk pengembang yang ingin meningkatkan kualitas kode dan maintainability.
+Tutorial ini ideal untuk pengembang yang ingin meningkatkan kualitas kode dan mudah dirawat.
 
 ## Panduan Tidak Resmi
 
@@ -31,7 +31,7 @@ Meskipun panduan ini tidak secara resmi dikelola oleh tim Flight, mereka adalah 
 
 ### [Membuat API RESTful dengan Flight Framework](https://dev.to/n0nag0n/creating-a-restful-api-with-flight-framework-56lj)
 
-Panduan ini membawa Anda melalui pembuatan API RESTful menggunakan framework Flight PHP. Ini mencakup dasar-dasar pengaturan API, mendefinisikan rute, dan mengembalikan respons JSON.
+Panduan ini membawa Anda melalui pembuatan API RESTful menggunakan framework Flight PHP. Ini mencakup dasar-dasar pengaturan API, mendefinisikan _route_, dan mengembalikan respons JSON.
 
 ### [Membangun Blog Sederhana](https://dev.to/n0nag0n/building-a-simple-blog-with-flight-part-1-4ap8)
 
@@ -42,14 +42,14 @@ Panduan ini membawa Anda melalui pembuatan blog dasar menggunakan framework Flig
 
 ### [Membangun API Pokémon di PHP: Panduan untuk Pemula](https://dev.to/n0nag0n/building-a-pokemon-api-in-php-a-beginners-guide-3an8)
 
-Panduan menyenangkan ini membawa Anda melalui pembuatan API Pokémon sederhana menggunakan Flight PHP. Ini mencakup dasar-dasar pengaturan API, mendefinisikan rute, dan mengembalikan respons JSON.
+Panduan menyenangkan ini membawa Anda melalui pembuatan API Pokémon sederhana menggunakan Flight PHP. Ini mencakup dasar-dasar pengaturan API, mendefinisikan _route_, dan mengembalikan respon JSON.
 
 ## Berkontribusi
 
 Punya ide untuk panduan? Menemukan kesalahan? Kami menyambut kontribusi! Panduan kami dikelola di [repositori dokumentasi FlightPHP](https://github.com/flightphp/docs).
 
-Jika Anda telah membangun sesuatu yang menarik dengan Flight dan ingin membagikannya sebagai panduan, silakan kirimkan pull request. Berbagi pengetahuan membantu komunitas Flight berkembang.
+Jika Anda telah membangun sesuatu yang menarik dengan Flight dan ingin membagikannya sebagai panduan, silakan kirimkan _pull request_. Berbagi pengetahuan membantu komunitas Flight berkembang.
 
 ## Mencari Dokumentasi API?
 
-Jika Anda mencari informasi spesifik tentang fitur dan metode inti Flight, periksa bagian Learn dari dokumentasi kami.
+Jika Anda mencari informasi spesifik tentang fitur dan metode inti Flight, periksa bagian [Learn](/learn) dari dokumentasi kami.

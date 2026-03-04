@@ -2,8 +2,8 @@
 
 Ada beberapa prasyarat dasar sebelum Anda dapat menginstal Flight. Yaitu, Anda perlu:
 
-1. [Instal PHP di sistem Anda](#menginstal-php)
-2. [Instal Composer](https://getcomposer.org) untuk pengalaman pengembang terbaik.
+1. [Instal PHP](#menginstal-php) di sistem Anda
+2. [Instal Composer](https://getcomposer.org) untuk pengalaman terbaik sebagai pengembang.
 
 ## Instalasi Dasar
 
@@ -13,7 +13,7 @@ Jika Anda menggunakan [Composer](https://getcomposer.org), Anda dapat menjalanka
 composer require flightphp/core
 ```
 
-Ini hanya akan meletakkan file inti Flight di sistem Anda. Anda perlu mendefinisikan struktur proyek, [layout](/learn/templates), [dependencies](/learn/dependency-injection-container), [configs](/learn/configuration), [autoloading](/learn/autoloading), dll. Metode ini memastikan bahwa tidak ada dependensi lain selain Flight yang diinstal.
+Ini hanya akan meletakkan framework inti Flight di sistem Anda. Anda perlu mendefinisikan struktur proyek, [layout](/learn/templates), [dependencies](/learn/dependency-injection-container), [configs](/learn/configuration), [autoloading](/learn/autoloading), dll. Metode ini memastikan bahwa tidak ada dependensi lain selain Flight yang diinstal.
 
 Anda juga dapat [mengunduh file](https://github.com/flightphp/core/archive/master.zip)
  secara langsung dan mengekstraknya ke direktori web Anda.
@@ -26,7 +26,7 @@ Sangat disarankan untuk memulai dengan aplikasi [flightphp/skeleton](https://git
 composer create-project flightphp/skeleton my-project/
 ```
 
-Ini akan menyiapkan struktur proyek Anda, mengonfigurasi autoloading dengan namespace, menyiapkan konfigurasi, dan menyediakan alat lain seperti [Tracy](/awesome-plugins/tracy), [Tracy Extensions](/awesome-plugins/tracy-extensions), dan [Runway](/awesome-plugins/runway)
+Ini akan menyiapkan struktur proyek Anda, mengonfigurasi _autoloading_ dengan _namespace_, menyiapkan konfigurasi, dan menyediakan _tools_ lain seperti [Tracy](/awesome-plugins/tracy), [Tracy Extensions](/awesome-plugins/tracy-extensions), dan [Runway](/awesome-plugins/runway)
 
 ## Konfigurasi Server Web Anda
 
@@ -40,9 +40,9 @@ php -S localhost:8000
 composer start
 ```
 
-Kemudian buka browser Anda dan pergi ke `http://localhost:8000`.
+Kemudian buka browser Anda dan menuju ke `http://localhost:8000`.
 
-Jika Anda ingin menjadikan document root proyek Anda direktori yang berbeda (Contoh: proyek Anda adalah `~/myproject`, tetapi document root Anda adalah `~/myproject/public/`), Anda dapat menjalankan perintah berikut setelah berada di direktori `~/myproject`:
+Jika Anda ingin menggunakan direktori yang berbeda pada _document root_ proyek Anda (Contoh: proyek Anda adalah `~/myproject`, tetapi _document root_ Anda adalah `~/myproject/public/`), Anda dapat menjalankan perintah berikut setelah berada di direktori `~/myproject`:
 
 ```bash
 php -S localhost:8000 -t public/
@@ -50,13 +50,13 @@ php -S localhost:8000 -t public/
 composer start
 ```
 
-Kemudian buka browser Anda dan pergi ke `http://localhost:8000`.
+Kemudian buka browser Anda dan menuju ke `http://localhost:8000`.
 
 ### Apache
 
 Pastikan Apache sudah diinstal di sistem Anda. Jika tidak, cari di Google cara menginstal Apache di sistem Anda.
 
-Untuk Apache, edit file `.htaccess` Anda dengan yang berikut:
+Untuk Apache, edit file `.htaccess` Anda dengan contoh yang berikut:
 
 ```apacheconf
 RewriteEngine On
@@ -65,7 +65,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [QSA,L]
 ```
 
-> **Catatan**: Jika Anda perlu menggunakan flight di subdirektori, tambahkan baris
+> **Catatan**: Jika Anda perlu menggunakan Flight di sub-direktori, tambahkan baris
 > `RewriteBase /subdir/` tepat setelah `RewriteEngine On`.
 
 > **Catatan**: Jika Anda ingin melindungi semua file server, seperti file db atau env.
@@ -111,7 +111,7 @@ Flight::route('/', function () {
 Flight::start();
 ```
 
-Dengan aplikasi skeleton, ini sudah dikonfigurasi dan ditangani di file `app/config/routes.php` Anda. Layanan dikonfigurasi di `app/config/services.php`
+Dengan aplikasi skeleton, _Routes_ sudah dikonfigurasi dan ditangani di file `app/config/routes.php` Anda. _Services_ dikonfigurasi di `app/config/services.php`
 
 ## Menginstal PHP
 
@@ -262,6 +262,6 @@ Jika Anda sudah memiliki `php` yang diinstal di sistem Anda, lanjutkan dan lewat
 
 ### **Catatan Umum**
 
-- Untuk lingkungan pengembangan, penting untuk mengonfigurasi pengaturan PHP sesuai dengan persyaratan proyek Anda. 
+- Untuk lingkungan pengembangan, penting untuk mengonfigurasi pengaturan PHP sesuai dengan persyaratan proyek Anda.
 - Saat beralih versi PHP, pastikan semua ekstensi PHP yang relevan diinstal untuk versi spesifik yang ingin Anda gunakan.
 - Restart server web Anda (Apache, Nginx, dll.) setelah beralih versi PHP atau memperbarui konfigurasi untuk menerapkan perubahan.
